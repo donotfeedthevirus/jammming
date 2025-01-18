@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import Spotify from './Spotify'
-import Search from './Search/Search'
+import Search from './Search'
+import TrackList from './TrackList'
 
 function App() {
   const [token, setToken] = useState(null);
@@ -35,6 +36,7 @@ function App() {
           <main>
             <section className='searchSection'>
               <Search handleSearch={searchSongs} />
+              <TrackList trackList={searchResults} isSearch={true} handleClick={(id) => console.log(id)} />
             </section>
           </main>
         </>

@@ -40,21 +40,27 @@ main{
 }
 
 section{
-  height: 800px;
+  height: 740px;
   width: 550px;
   background-color: hsla(251, 100%, 14%, 0.932);
   border-radius: 25px;
   padding: 30px;
   display:flex;
   justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 section form {
   width: 100%;
 }
 
+button:hover{
+  cursor: pointer;
+}
+
 section input, 
-section button {
+section .searchButton {
   font-size: 20px;
   height: 50px;
   border: none;
@@ -68,10 +74,54 @@ section input{
   text-indent: 10px;
 }
 
-section button{
+section .searchButton{
   width: 20%;
   border-radius: 0 10px 10px 0;
   background-image: linear-gradient(to right, hsl(244, 54%, 55%), hsl(244, 98%, 40%));
   font-weight: bold;
+  color: white;
+}
+
+.trackList{
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.track{
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  margin: 20px 0 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.track:last-child{
+  border: none;
+}
+
+.track .info{
+  width: 80%;
+  height: 60px;
+}
+
+.track .info h1{
+  font-size: 20px;
+  color: white;
+}
+
+.track .info h2{
+  font-size: 15px;
+  color: grey
+}
+
+.track button{
+  width: 20%;
+  height: 60px;
+  border: none;
+  background-color: transparent;
+  font-size: 40px;
   color: white;
 }
