@@ -14,7 +14,7 @@ The user would be able to log in and search and add albums to their library and 
 ### Back-end
 
 - Node (Runtime)
-- Express.js (Framework)
+- Nest.js (Framework)
 - Prisma (ORM)
 - PostgreSQL (Database)
 - Spotify Web API (Playback and album/track information)
@@ -25,13 +25,31 @@ The user would be able to log in and search and add albums to their library and 
 - Last.fm 1k (Base dataset)
 - ALS (Model)
 
+### CI/CD
+
+- Docker
+- Turborepo
+- Git/GitHub
+
 ### To search:
 
-- [ ] What is Fastify
-- [ ] Dig deeper into Express and Nest and their differences
-- [ ] What is Turborepo
-- [ ] OAuth implementation
-- [ ] React Query
+- [x] What is Fastify
+- [x] Dig deeper into Express and Nest and their differences
+- [x] What is Turborepo
+- [x] OAuth implementation
+- [ ] Dig deeper into React
+  - Hooks
+    - [ ] `react-hook-form`
+    - [x] `useState` vs `useReducer`
+    - [ ] `useEffect`
+    - [ ] `useMemo` & `useCallback`
+    - [ ] `useRef`
+    - [ ] Custom Hooks
+  - [ ] React Query
+  - [ ] WebSockets
+- [ ] Dig deeper into Next.js
+  - [ ] `NextAuth`
+  - [ ] ISR
 - [ ] What is Redis and how it is used
 - [ ] What is Zod and how it is used in backend development (Node)
 - [ ] Github Actions
